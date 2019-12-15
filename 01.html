@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>开始添加网页结构</div>
+    <div>准备第三次提交,新增了内容,新增了文件夹,测试一次性提交</div>
+    <div>第四次提交,测试reflog 和 一次性提交git commit --all -m</div>
+    <div>第五次提交:添加整理笔记: </div>
+    <div>第八次提交:添加整理笔记: </div>
+    <div>第九次提交:合并分支,合并前做一点修改: </div>
+    <div>第十次提交: 在主分支修改一下没提交,在dalinger分支中也修改一下没提交,再切换回主分支,这时合并分支做提交[不]有冲突,不需要手动修改</div>
+    <div>第11次提交: 在主分支修改一下提交,在dalinger分支中也修改一下提交,再切换回主分支,这时合并分支做提交有冲突,需要手动修改</div>
+    <ul>
+        <li>git第一次使用要初始化 git init</li>
+        <li>git第一次使用要设置用户信息--邮箱 git config --global user.email "you@example.com"</li>
+        <li>git第一次使用要设置用户信息--用户名 git config --global user.name "yourname"</li>
+        <li>提交 git add 文件路径 git add . 当前文件夹全部提交 git commit -m "版本信息描述"</li>
+        <li>一次性全部直接提交 git commit --all -m "版本信息描述" 修改备注的版本信息:git commit --amend</li>
+        <li>查看版本信息 git log 查看简约版一行显示的版本信息 git log --oneline</li>
+        <li>版本穿梭 git reset --hard Head~1回到上个版本 2表示上上个版本</li>
+        <li>版本穿梭 git reset --hard [版本号] 回到指定版本</li>
+        <li>版本回退后 查看所有的版本信息(版本切换记录) git reflog</li>
+        <li>版本回退后 查看当前目中的文件的提交状态 git status</li>
+        <li>git status</li>
+        <ul>
+            <li>untracked(红色文件名) 新建的文件,没有add过</li>
+            <li>modified(红色文件名) 修改过的文件,没有add过</li>
+            <li>modified(绿色文件名) 修改过的文件,已经add过staged,没有commit过</li>
+            <li>modified(绿色文件名) 修改过的文件,已经commit过committed</li>
+        </ul>
+        <li>git的分支功能</li>
+        <ul>
+            <li>git branch 查看所有分支</li>
+            <li>git branch [分支名] 新建一个分支</li>
+            <li>git checkout [分支名] 切换到指定分支</li>
+            <li>git checkout -b [分支名] 新建分支,并切换到该分支</li>
+            <li>git branch -d [分支名] 删除分支,不能在当前分支下删除当前分支</li>
+            <li>git merge [分支名] 合并分支 把[指定]分支合并到[当前]分支,不能在被合并的分支下进行这一步操作</li>
+        </ul>
+    </ul>
+</body>
+
+</html>
